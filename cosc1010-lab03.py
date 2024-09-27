@@ -1,60 +1,57 @@
-# Your Name Here
+# Bradley Ekstrom
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# 09/26/24
+# Lab 03
+# Lab Section: 13
+# Sources, Nolan Hottel, and Rylie Green
+print('Part One-----------------------------')
 
+states = ['Wyoming', 'Colorado', 'Montana']
+print(states)
+print(states[0])
+print(states[-1])
 
+#Using an F-string to access the first and second element print the string
+print(f"{states[0:2]}")
 
-# This is your second lab section. It will primarily be based on the Introducing Lists lecture, reference it if you need
-# Complete all sections of this assignment 
+# "COLORADO is south of WYOMING", matching the casing provided
+print(f"{states[1].upper()} is south of {states[0].upper()}")
 
+print("Part Two-----------------------------")
 
-print("Part One------------------------------------------------------------------------")
-#We are going to start with the basics. Declare a list  states that contains the elements: Wyoming, Colorado, Montana in that order 
-#Note this is the ONLY point where you need to declare the states list
+#Append the following states to your list: Washington, Oregon, California and printyour list
+states.append('Washington')
+states.append('Oregon')
+states.append('California')
+print(states)
 
+#Again using the specific syntax mentioned in class overwrite the second to lastelement to be Maine, printing the list
+states[-2] = 'Maine'
+print(states)
 
+#Insert the state Texas to be the third element in the list, again printing yourlist
+states.insert(4, 'Texas')
+print(states)
 
-#print the entire list
-
-
-#now print the first element in the list
-
-
-#Print the last element using the syntax shown in class to access the final element (hint, think negatives)
-
-
-#Using an F-string to access the first and second element print the string "COLORADO is south of WYOMING", matching the casing provided
-
-
-
-
-print("Part Two------------------------------------------------------------------------")
-#Append the following states to your list: Washington, Oregon, California and print your list
-
-
-#Again using the specific syntax mentioned in class overwrite the second to last element to be Maine, printing the list 
-
-
-#Insert the state Texas to be the third element in the list, again printing your list
-
-
-#Using the `del` statement remove the fourth item from the list, print your list 
-
+#Using the `del` statement remove the fourth item from the list, print your list
+del states[5]
+print(states)
 
 #Remove Texas using its value, print the list
+states.remove('Texas')
+print(states)
 
-print("Part Three----------------------------------------------------------------------")
-#Temporarily sort your list, print it both sorted and unsorted 
+print("Part Three-----------------------------")
 
+#Temporarily sort your list, print it both sorted and unsorted
+print(states)
+states.sort()
+print(states)
 
 #Permanently sort your list in reverse order, printing it out
-
+print(sorted(states))
+print(sorted(states,reverse=True))
 
 #Using the reverse method reverse the list and print it
-
+states.reverse()
+print(states)

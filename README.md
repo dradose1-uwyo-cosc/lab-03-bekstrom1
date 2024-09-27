@@ -1,7 +1,7 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
-## Worked with/sources 
+# [Bradley]
+## [Assignment 3]
+## [Submission date: 09/26/24]
+## Worked with/sources Nolan Hottel and Rylie Green
 * example
 * example
 * example
